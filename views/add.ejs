@@ -1,0 +1,21 @@
+<%-include('./inc/admin-header') %>
+        <form action="/add" method="POST">
+            <div class="main bg-dark">
+                <div class="col-md-6 ">
+                    <div class="mb-3 bg-dark">
+                        <label for="exampleFormControlInput1" class="form-label text-light">Başlık Giriniz</label>
+                        <input type="text" name="header" class="form-control" id="exampleFormControlInput1">
+                    </div>
+                    <div class="mb-3 bg-dark">
+                        <label for="exampleFormControlTextarea1" class="form-label text-light">YAZINIZI GİRİN</label>
+                        <textarea class="form-control" name="content" id="exampleFormControlTextarea1"
+                            rows="3"></textarea>
+                        <button type="submit" class="btn btn-secondary">Yazıyı Ekle</button>
+                    </div>
+                </div>
+                <h3 class="text-light mt-2">
+                    <%=a %>
+                </h3>
+            </div>
+        </form>
+        <%-include('./inc/footer') %>

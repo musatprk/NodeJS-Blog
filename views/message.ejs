@@ -1,0 +1,15 @@
+<%-include('./inc/admin-header') %>
+    
+        <h2 class="text-light text-center">YAZIYI SİLMEK İÇİN YANINDAKİ SİL BUTONUNA BASINIZ</h2>
+        <% a.forEach(function(i) { %>
+            <h4 class="text-light">
+                <%= i.contactemail %>
+            </h4>
+            <p class="text-light">
+                <%= i.contactmes%>
+                    </h>
+                    <a class="btn btn-secondary" role="button" aria-pressed="true"
+                        href="/deletemessage/<%=i.contactid %>">Sil</a>
+                    <br>
+                    <% }); %>
+    <%-include('./inc/footer') %>

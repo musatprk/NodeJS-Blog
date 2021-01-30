@@ -1,0 +1,13 @@
+<%-include('./inc/admin-header') %>
+    
+        <h2 class="text-light text-center">YAZIYI SİLMEK İÇİN YANINDAKİ SİL BUTONUNA BASINIZ</h2>
+        <li>
+            <% b.forEach(function(i) { %>
+                <ul> <a class="text-light text-decoration-none" href="/content/<%=i.cid %>">
+                        <%= i.chd %>
+                    </a>
+                    <a class="btn btn-secondary" role="button" aria-pressed="true" href="/delete/<%=i.cid %>">Sil</a>
+                </ul>
+                <% }); %>
+        </li>
+    <%-include('./inc/footer') %>

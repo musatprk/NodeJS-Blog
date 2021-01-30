@@ -1,0 +1,11 @@
+<%-include('./inc/header') %>
+        
+            <h2 class="text-light text-center mt-2">En Güncel Yazılar</h2>
+            <li>
+                <% a.forEach(function(i) { %>
+                    <ul> <a class="text-light text-decoration-none" href="/content/<%=i.cid %>">
+                            <%= i.chd %>
+                        </a> </ul> 
+                    <% }); %> <br>
+            </li>
+        <%-include('./inc/footer') %>
